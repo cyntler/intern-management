@@ -1,6 +1,6 @@
 # intern-management
 
-Vue recruitment application for managing interns.
+Vue.js recruitment application for managing interns.
 
 ## How to run?
 

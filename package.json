@@ -1,7 +1,7 @@
 {
   "name": "intern-management",
   "version": "0.0.0",
-  "description": "Vue recruitment application for managing interns.",
+  "description": "Vue.js recruitment application for managing interns.",
   "keywords": [
     "vuejs",
     "recruitment-task",
