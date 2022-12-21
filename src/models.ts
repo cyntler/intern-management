@@ -6,9 +6,17 @@ export type InternResponse = {
   data: Intern[];
 };
 
+export type AddInternResponse = {
+  id: string;
+  createdAt: string;
+};
+
+export type EditInternResponse = {
+  updatedAt: string;
+};
+
 export type Intern = {
   id: number;
-  email: string;
   first_name: string;
   last_name: string;
   avatar: string;

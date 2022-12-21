@@ -8,6 +8,16 @@ const router = createRouter({
       name: 'intern-list',
       component: () => import('./screens/InternList.vue'),
     },
+    {
+      path: '/new',
+      name: 'intern-add-new',
+      component: () => import('./screens/InternAddNew.vue'),
+    },
+    {
+      path: '/edit/:id',
+      name: 'intern-edit',
+      component: () => import('./screens/InternEdit.vue'),
+    },
   ],
 });
 
