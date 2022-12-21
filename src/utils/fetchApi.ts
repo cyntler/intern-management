@@ -1,13 +1,16 @@
+import type { AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios from 'axios';
+
 import { API_URL } from '@/consts';
 
-export const fetchApi = async (endpoint: string, method: string = 'GET') => {
-  const result = await fetch(`${API_URL}${endpoint}`, {
-    method,
-  });
+export const fetchApi = async <T>(
+  endpoint: string,
+  options?: AxiosRequestConfig,
+) => {
+  const result = await axios<any, AxiosResponse<T>>(
+    `${API_URL}${endpoint}`,
+    options,
+  );
 
-  if (!result.ok) {
-    throw new Error(result.statusText);
-  }
-
-  return result.json();
+  return result.data;
 };
