@@ -16,6 +16,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "prettier-check": "prettier --check ./src",
+    "release": "release-it",
     "deploy": "rimraf ./dist && npm run build && gh-pages -d ./dist"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.20",
     "prettier": "^2.7.1",
+    "release-it": "^15.5.1",
     "rimraf": "^3.0.2",
     "sass": "^1.57.1",
     "typescript": "~4.7.4",
