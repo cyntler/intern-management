@@ -16,7 +16,7 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['Preloader', 'Button'],
+        ignores: ['Preloader', 'Button', 'Pagination'],
       },
     ],
   },
